@@ -1,0 +1,13 @@
+syntax = "proto3";
+package reverse;
+option go_package = "github.com/iancharters/prototest/reverse";
+
+service Reverse {
+    rpc Do(Request) returns (Response) {}
+}
+message Request {
+    string message = 1;
+}
+message Response {
+    string message = 1;
+}
